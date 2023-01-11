@@ -1,0 +1,44 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+ 
+}
+
+p{
+    font-size:2vmax;
+    font-style: italic;
+    font-weight: bold;
+    direction:rtl;
+    letter-spacing: 2px;
+    word-spacing: 50px;
+    text-align:center;
+    text-indent: 50px;
+    text-shadow: 2px 2px 1px red;
+    color:blue;
+}
+
+.pai{
+    width:50rem;
+    height:100vh;
+    background:darkcyan;
+}
+
+.pai > div{
+    width:50%;
+    height:50rem;
+    background:red
+}
+
+.color-one{
+    background:darkseagreen;
+}
+
+.color-two{
+    background:darkturquoise;
+}
+

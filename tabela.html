@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTable</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align:left;
+            font-style:italic;
+            font-size: 14px;
+            margin-top: 5px;;
+        }
+
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align:center;
+        }
+
+        tfoot td{
+            background: #ddd
+        }
+
+        .responsive-table{
+            max-width: 100%;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet</p>
+    <div class = "responsive-table">
+    <table>
+        <caption>Descrição da tabela</caption>
+        <thead>
+            <tr>
+                <th>Título 1</th>
+                <th>Título 2</th>
+                <th>Título 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Corpo 1</td>
+                <td>Corpo 2</td>
+                <td>Corpo 3</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" rowspan="2">OCUPA</td>
+                <td>Corpo 5</td>
+            </tr>
+
+            <tr>
+                <td>Corpo 3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>total 1</td>
+                <td>total 2</td>
+                <td>total 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
