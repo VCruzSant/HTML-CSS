@@ -1,104 +1,97 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.ps{
-    transition: 250ms ease-in-out;
+.ps {
+  transition: 250ms ease-in-out;
 }
 
-.ps:hover{
-    background: green;
+.ps:hover {
+  background: green;
 }
 
-a{
-    color: red;
+a {
+  color: red;
 }
 
-a:link{
-    color: yellow;
+a:link {
+  color: yellow;
 }
 
-a:visited{
-    color:purple;
+a:visited {
+  color: purple;
 }
 
-a:active{
-    background: darkcyan;
-    color: blanchedalmond;
+a:active {
+  background: darkcyan;
+  color: blanchedalmond;
 }
 
-[class^=input]{
-    padding: 1%;
+[class^="input"] {
+  padding: 1%;
 }
-.nome:focus{
-    cursor: pointer;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    outline:none;
-    border: 1px solid black;
-}
-
-.disable:disabled{
-    background: blue;
-    cursor:not-allowed;
+.nome:focus {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  outline: none;
+  border: 1px solid black;
 }
 
-.check:checked + p{ 
-background:red;
+.disable:disabled {
+  background: blue;
+  cursor: not-allowed;
 }
 
-.check:not(:checked) + p{
-    background: yellow;
+.check:checked + p {
+  background: red;
 }
 
-nav{
-    padding:2%;;
+.check:not(:checked) + p {
+  background: yellow;
 }
 
-li:first-child{
-    background: red;
+nav {
+  padding: 2%;
 }
 
-
-div:not(.menos){
-    color:orange
+li:first-child {
+  background: red;
 }
 
-li:nth-child(4){
-    background-color: black;
-    color:bisque;
+div:not(.menos) {
+  color: orange;
 }
 
-li:nth-child(odd){
-    background: purple;
-}
-li:nth-child(even){
-    background-color: cornflowerblue;
-}
-li:nth-child(3n){
-    background:darkcyan;
+li:nth-child(4) {
+  background-color: black;
+  color: bisque;
 }
 
-ul .pseudo::after{
-    content: "-";
-    background: darkturquoise;
-    color: aliceblue;
+li:nth-child(odd) {
+  background: purple;
+}
+li:nth-child(even) {
+  background-color: cornflowerblue;
+}
+li:nth-child(3n) {
+  background: darkcyan;
 }
 
-.first::first-letter{
-    font-size: 50px;
-    display: block;
-    float:left;
-    margin: 0 10px;
+ul .pseudo::after {
+  content: "-";
+  background: darkturquoise;
+  color: aliceblue;
 }
 
-div::selection{
-    background:black;
-    color:whitesmoke;
+.first::first-letter {
+  font-size: 50px;
+  display: block;
+  float: left;
+  margin: 0 10px;
 }
 
-
-
-
-
-
+div::selection {
+  background: black;
+  color: whitesmoke;
+}
