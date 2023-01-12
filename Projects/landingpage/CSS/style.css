@@ -1,0 +1,51 @@
+:root{
+    --primaryCcolor:#00A372;
+    --white:#fff;
+    --gap:3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color:var(--primaryCcolor)
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+} 
+
+h1{
+    font-size:6rem;
+    text-transform:uppercase;
+}
+
+.mainCbg{
+    background-image: url(../img/main.svg);
+    background-size:cover;
+    background-position: center center;
+    color:var(--white)
+}
+
+.whiteCbg{
+    background: var(--white);
+}
+
+.mainCcontent{
+    max-width: 120rem;
+    margin:0 auto;
+    padding: var(--gap)
+}
+
+.section{
+    min-height: 100vh;
+}
