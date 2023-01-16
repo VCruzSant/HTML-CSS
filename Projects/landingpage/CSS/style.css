@@ -161,3 +161,33 @@ p {
   height: 100vh;
   text-align: center;
 }
+
+.gridKeyContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  counter-reset: gridConter;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.gridKeyContent::before {
+  counter-increment: gridConter;
+  content: counter(gridConter);
+  position: absolute;
+  font-size: 6rem;
+  font-style: italic;
+  top: 0;
+  left: 0;
+}
+
+.gridKeyContent h3 {
+  font-size: 3rem;
+  position: relative;
+  top: 2.3rem;
+  margin-bottom: 2.7rem;
+  margin-left: 3rem;
+}
+
+.gridMainContent{
+  margin-top:4rem;
+}
