@@ -248,3 +248,11 @@ tfoot td {
   overflow: hidden;
   overflow-x: auto;
 }
+
+.form{
+  grid-column: span 2;
+}
+
+.form fieldse{
+  border: none;
+}
