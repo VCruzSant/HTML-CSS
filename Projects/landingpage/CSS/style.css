@@ -65,7 +65,7 @@ p {
 .mainContent {
   max-width: 120rem;
   margin: 0 auto;
-  padding: var(--gap);
+  padding: 8rem var(--gap);
 }
 
 .section {
@@ -79,6 +79,7 @@ p {
   left: 0;
   width: 100%;
   border-bottom: 0.1rem solid var(--grey);
+  z-index: 1;
 }
 
 .menuContent {
@@ -137,7 +138,7 @@ p {
   grid-template-columns: 0.8fr 1fr;
   gap: var(--gap);
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .introTextContent,
@@ -156,9 +157,11 @@ p {
 .keyContent {
   max-width: 64rem;
   display: flex;
-  flex-flow: column wrap;
+  /*flex-flow: column wrap;*/
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -188,6 +191,13 @@ p {
   margin-left: 3rem;
 }
 
-.gridMainContent{
-  margin-top:4rem;
+.gridMainContent {
+  margin-top: 4rem;
+}
+
+.gridGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  position: relative;
 }
