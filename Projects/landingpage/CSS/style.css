@@ -181,6 +181,7 @@ p {
   font-style: italic;
   top: 0;
   left: 0;
+  transform:rotate(5deg);
 }
 
 .gridKeyContent h3 {
@@ -201,3 +202,19 @@ p {
   gap: var(--gap);
   position: relative;
 }
+
+.galleryImg{
+  width:100%;
+  max-width: 36rem;
+  max-height:36rem;
+  overflow:hidden;
+}
+
+.galleryImg img{
+  transition: all 300ms ease-in-out;
+}
+
+.galleryImg img:hover{
+  transform: translate(-3%, -3%) scale(1.2) rotate(5deg);
+}
+
