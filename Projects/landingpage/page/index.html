@@ -4,21 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="../theme/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <title>Landing Page</title>
   </head>
   <body>
+    <input
+      class="closeMenu"
+      id="closeMenu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label class="closeMenuLabel" for="closeMenu" title="closeMenu"></label>
     <aside class="menu whiteBg">
       <div class="mainContent menuContent">
         <h1><a href="#">logo</a></h1>
         <nav>
-          <ul class="flex">
+          <!--- onclick="getElementById('closeMenu').checked=false;"--->
+          <ul onclick="closeListMenu()">
             <li><a href="#intro">Intro</a></li>
             <li><a href="#key">Key</a></li>
             <li><a href="#gridKey">GridKey</a></li>
@@ -46,7 +59,7 @@
         </div>
         <div class="introTextImg">
           <img
-            src="../img/htmlCss.svg"
+            src="../assets/htmlCss.svg"
             alt="homem olhando as palavras html e css"
           />
         </div>
@@ -234,12 +247,18 @@
         <div class="introTextContent">
           <h2>CSS: Cascading Style Sheets</h2>
           <p>
-            CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.
+            CSS is among the core languages of the open web and is standardized
+            across Web browsers according to W3C specifications. Previously, the
+            development of various parts of CSS specification was done
+            synchronously, which allowed the versioning of the latest
+            recommendations. You might have heard about CSS1, CSS2.1, or even
+            CSS3. There will never be a CSS3 or a CSS4; rather, everything is
+            now CSS without a version number.
           </p>
         </div>
         <div class="introTextImg">
           <img
-            src="../img/contact.svg"
+            src="../assets/contact.svg"
             alt="homem olhando as palavras html e css"
           />
         </div>
@@ -249,36 +268,60 @@
             <legend>Contact me</legend>
             <div class="formGroup">
               <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName" placeholder="Your Name">
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Your Name"
+              />
             </div>
 
             <div class="formGroup">
               <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName" placeholder="Your last name">
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Your last name"
+              />
             </div>
 
             <div class="formGroup">
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" placeholder="Your email adress">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email adress"
+              />
             </div>
 
             <div class="formGroup fullWidth">
               <label for="message">Message</label>
-              <textarea name="message" id="message" placeholder="Send a message"></textarea>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Send a message"
+              ></textarea>
             </div>
 
             <div class="formGroup">
               <button type="submit">Send Message</button>
             </div>
-
           </fieldset>
         </div>
       </div>
     </section>
 
     <footer id="footer" class="footer">
-      <p><a href="https://github.com/VCruzSant" target="_blanck">Model code HTML/CSS by Vinicius Santiago</a></p>
+      <p>
+        <a href="https://github.com/VCruzSant" target="_blanck"
+          >Model code HTML/CSS by Vinicius Santiago</a
+        >
+      </p>
     </footer>
 
+    <a class="backTop" href="#">➤</a>
   </body>
+  <script src="../js/index.js"></script>
 </html>
